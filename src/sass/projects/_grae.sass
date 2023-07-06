@@ -1,0 +1,137 @@
+.grae
+	background: $grae-primary-colour
+	color: $grae-text-colour
+	font:
+		family: $font-lato
+		size: 16px
+	margin: 0 auto
+	max-height: 800px
+	max-width: 1400px
+	
+	::selection, ::-moz-selection
+		color: #ffffff
+		background-color: #dce0d7
+
+	a
+		color: $grae-lighter-gray
+		text-decoration: none
+		transition: color 150ms ease
+		outline: none
+		&:hover, &:focus
+			color: lighten($grae-lighter-gray, 10%)
+		&:visited
+			color: darken($grae-lighter-gray, 10%)
+  
+	header
+		margin: 0 auto
+		padding: 50px 20px 10px
+		width: 90%
+
+	.logo
+		color: lighten(#bbc0b5, 2%)
+		font:
+			family: $font-quicksand
+			size: 3em
+			weight: 700
+		letter-spacing: -2px
+
+		span
+			color: #703030
+
+	/* Main */
+	main
+		background-color: $grae-light-gray
+		margin: 0 auto
+		min-height: 470px
+		position: relative
+		width: 480px		
+
+	ul
+		align-items: center
+		background-color: $grae-accent-colour
+		display: flex
+		height: 70px
+		padding: 0 20px
+		li
+			&:last-child
+				margin-left: auto
+
+	[class^='icon']
+		background: none
+		border: none
+		display: block
+		height: 27px
+		fill: $grae-icon
+		padding: 0
+		outline: none
+		stroke: $grae-icon
+		stroke-width: 0
+		width: 27px
+		&:hover
+			cursor: pointer
+			fill: lighten($grae-icon, 3%)
+			stroke: lighten($grae-icon, 3%)
+
+	.icon-next
+		background-color: $grae-accent-colour
+		bottom: 0
+		height: 70px
+		position: absolute
+		right: 0
+		width: 70px
+		svg
+			display: block
+			height: 30px
+			margin: 0 auto
+			width: 30px
+
+	figure
+		font-size: 1.1em
+		margin: 0 0 15px
+		padding: 60px 0
+		text-align: center
+		blockquote
+			margin: 0 auto 40px
+			width: 75%
+			&::before
+				background: url('../img/quote.svg') no-repeat
+				content: ''
+				display: block
+				height: 32px
+				margin: 0 0 10px -5px
+				width: 45px
+			div
+				width: 94%
+				margin: 0 auto
+		figcaption
+			text-transform: uppercase
+			&::before
+				background-color: $grae-primary-colour
+				content: ''
+				display: block
+				height: 2px
+				margin: 0 auto 15px
+				width: 70px
+
+	.fadeIn
+		animation: fadeIn .5s ease-in forwards
+		opacity: 0
+
+	@keyframes fadeIn
+		0%
+			opacity: 0
+			
+		100%
+			opacity: 1
+
+
+/* Footer */
+// footer
+// 	color: $grae-lighter-gray
+// 	padding: 20px 0
+// 	text-align: right
+// 	small
+// 		font:
+// 			size: inherit
+// 		a
+// 			text-transform: lowercase

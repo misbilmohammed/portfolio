@@ -1,0 +1,32 @@
+extends shared/layout
+
+block variables
+  - var page = 'home'
+
+block header
+  h1 Misbil
+    span Mohammed
+  p
+    | Full Stack Developer with experience in .NET Core, React, Node.js, &amp; MySQL.
+    br
+    | Based in Melbourne, Australia.
+  include shared/nav
+block content
+  section.projects#projects
+  section.contact#contact
+    .wrapper
+      h1 Get in touch
+      a(href='mailto:hello@misbilmohammed.com') +email
+      form(id="form")
+        fieldset
+          input(type='text', name='name', placeholder='Name')
+          span.error
+        fieldset
+          input(type='email', name='email', placeholder='Email')
+          span.error
+        fieldset
+          textarea(name='message', placeholder='Message', rows='6', cols='25')
+          span.error
+        input(type='submit', value='Send')
+block footer
+  a(href="#intro").fa.fa-angle-up
