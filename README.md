@@ -12,4 +12,4 @@ A web application that converts roman numbers to English numbers, and vice versa
 #### Grae - Random Quote Generator
 
 A random quote generator that sources quotes through Forismatic API.
-[View Code](https://github.com/misbilmohammed/portfolio/tree/main/dist/projects/grae)
+[View Code](https://github.com/misbilmohammed/portfolio/tree/main/dist/projects)
