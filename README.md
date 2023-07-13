@@ -3,7 +3,7 @@
 
 A WPF Windows application to help donors track their donations. 
 Uses MVVM framework to help with separation of concerns.
-[View Code](github.com/misbilmohammed/DonationTracker)
+[View Code](https://github.com/misbilmohammed/DonationTracker)
 
 #### Ignatius - Roman Numeral Converter
 A web application that converts roman numbers to English numbers, and vice versa.
